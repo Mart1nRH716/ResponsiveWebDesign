@@ -49,3 +49,25 @@ p {
 
 
 /** CODIGO AQUI **/
+@media (min-width: 768px) {
+    .contenedor-grid{
+        display: grid;
+        grid-template-columns: 1fr 2fr 1fr;
+        grid-template-areas: "izquierda contenido derecha";
+        /* Esta es la chida para acomodarlos y que no se creeen filas a lo wey peor no es escalable */
+        /* grid-auto-flow: column; */
+        gap: 2rem;
+    }
+    .contenido-principal{
+        grid-area: contenido;
+        /* grid-column: 2 / 3; */
+        /* Esta es uan forma pero hay otra */
+        /* grid-row: 1 / 2; */
+    }
+    .sidebar-1{
+        /* grid-column: 1 / 2; */
+        grid-area: izquierda;
+    } 
+}
+
+
