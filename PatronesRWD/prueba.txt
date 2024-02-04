@@ -1,1 +1,2 @@
 quiero ver si funciona esto con https
+Si jalo en la lap, falta hacer los comandos pull en la pc para aplicar cambios
