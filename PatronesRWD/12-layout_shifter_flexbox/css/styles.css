@@ -39,7 +39,7 @@ p {
 
 .entrada-blog a {
     display: inline-block;
-    background-color: #2196F3;
+    background-color: #1785df;
     color: white;
     padding: 10px 20px;
     text-decoration: none;
@@ -48,3 +48,33 @@ p {
 }
 
 /** CODIGO AQUI **/
+
+@media (min-width: 768px) {
+      .layout-shifter{
+        display: flex;
+        flex-direction: column-reverse;
+      }
+      .contenido-principal{
+        display: flex;
+        gap: 2rem;
+      }
+}
+
+@media (min-width: 992px) {
+    .layout-shifter{
+        flex-direction: row;
+        /* flex-direction: row-reverse; */
+        justify-content: space-between;
+      }
+      .contenido-principal{
+        /* Esto es para asoganrle el tam m,as grande a uno */
+        flex: 0 0 calc(66.6% - 2rem);
+        /* Cunado llegue al maximo wrao lo que va hacer es posicionarlo uno debajo del otro */
+        flex-wrap: wrap;
+      }
+    .sidebar{
+        flex: 0 0 calc(33.3% - 2rem);
+        /* Tambien se puede hacer para cambiar el orden del titulo */
+        order: 2;
+    }
+}

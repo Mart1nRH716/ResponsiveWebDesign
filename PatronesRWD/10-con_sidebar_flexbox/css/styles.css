@@ -49,3 +49,19 @@ p {
 
 
 /** CODIGO AQUI **/
+@media (min-width: 768px) {
+      .con-sidebar{
+        display: flex;
+        /* Se utiliza cuando tienes un calc */
+        /* justify-content: space-between; */
+        gap: 3rem;
+      }
+      aside{
+        /* Este reviose un pixel */
+        flex: 1;
+      }
+      article{
+        /* por cada pixel que toma el aside este toma 3 */
+        flex: 3;
+      }
+}

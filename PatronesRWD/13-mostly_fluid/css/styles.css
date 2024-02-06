@@ -37,3 +37,27 @@ p {
 }
 
 /** CODIGO AQUI **/
+.contenedor{
+    /* Esto como que limita el peacio de la imagen y texto */
+    max-width: 120rem;
+    width: 95%;
+    /* El primero de arriba hacia abajo es 0 y del ancho es auto */
+    margin: 0 auto;
+}
+@media (min-width: 768px) {
+    .contenedor{
+        width: 80%;
+        
+    }
+}
+
+@media (min-width: 992px) {
+    .contenedor{
+
+        width: 60%;
+
+    }
+}
+img{
+    width: 100%;
+}
